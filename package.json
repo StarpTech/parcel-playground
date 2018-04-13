@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "parcel index.html",
-    "build": "parcel build index.html",
-    "build:razor": "parcel build index.cshtml"
+    "watch": "parcel index.cshtml",
+    "build": "parcel build index.cshtml",
+    "build:dev": "npm run build -- --no-minify",
+    "build:prod": "npm run build"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,7 @@
     "babel-preset-env": "^1.6.1",
     "node-sass": "^4.8.3",
     "parcel-bundler": "^1.7.0",
-    "parcel-plugin-razor": "^0.0.1"
+    "parcel-plugin-razor": "^0.1.1"
   },
   "dependencies": {
     "autoprefixer": "^8.2.0",
